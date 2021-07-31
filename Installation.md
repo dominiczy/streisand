@@ -87,9 +87,10 @@ sudo python2.7 -m ensurepip
 
        ./util/venv-dependencies.sh ./venv
        
-1. After the above fails, try installing while ignore dependencies
+1. If the above fails, try activating env and installing manually
        
-       pip install -r requirements.txt --no-deps
+       pip install ansible==2.8.4
+       pip install pbr==5.6.0
 
 1. Activate the Ansible packages that were installed.
 
