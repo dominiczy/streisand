@@ -86,6 +86,9 @@ sudo python2.7 -m ensurepip
 1. Run the installer for Ansible and its dependencies. The installer will detect missing packages, and print the commands needed to install them. (Ignore the Python 2.7 `DEPRECATION` warning; ignore the warning from python-novaclient that pbr 5.1.3 is incompatible.)
 
        ./util/venv-dependencies.sh ./venv
+       
+1. After the above fails, try installing while ignore dependencies
+       pip install -r requirements.txt --no-deps
 
 1. Activate the Ansible packages that were installed.
 
